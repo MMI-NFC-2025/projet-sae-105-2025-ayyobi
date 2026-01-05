@@ -1,12 +1,339 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Accueil — Projet Individuel</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="L’effet Matilda : découvrez Nicole-Reine Lepaute et des ressources sur les femmes de science." />
+
+    <title>L’effet Matilda — Nicole-Reine Lepaute</title>
+
+    <!-- Polices (à adapter à ta maquette si besoin) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Favicons (mets tes fichiers dans assets/favicons/) -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="/src/css/style.css" />
 </head>
+
 <body>
-  <h1>Accueil (FR)</h1>
-  <p>Page d'accueil — contenu placeholder.</p>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <!-- Header + Menu (structure compatible avec ton menu.js) -->
+    <header class="header container">
+        <div class="header__start">
+            <a class="header__brand" href="/fr/">
+                <img class="header__logo" src="/assets/icons/logo-nicole.svg" alt="Logo Nicole-Reine Lepaute"
+                    width="110" height="28" />
+            </a>
+        </div>
+
+        <div class="header__end">
+            <a class="language-btn" href="/en/">
+                EN|<span>FR</span>
+            </a>
+
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false"
+                aria-controls="mainNav">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+                <ul class="menu__list u-list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/">Accueil</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/articles/lepaute.html">Articles</a>
+                        <ul class="menu__sublist u-list-unstyled" aria-label="Sous-menu Articles">
+                            <li class="menu__subitem">
+                                <a class="menu__sublink" href="/fr/articles/lepaute.html">Nicole-Reine Lepaute</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a class="menu__sublink" href="/fr/articles/litterature.html">Femmes de science</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a class="menu__sublink" href="/fr/articles/vulgarisation.html">Vulgarisation
+                                    scientifique</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a class="menu__sublink" href="/fr/articles/contact-film.html">Film Contact (1997)</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a class="menu__sublink" href="/fr/articles/objet-bu.html">Livre : 17 femmes prix Nobel
+                                    de sciences</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a class="menu__link" href="/fr/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__header container">
+                <div class="hero__img duotone">
+                    <img src="/assets/img/ui/hero-nicole-reine-lepaute.avif"
+                        alt="Portrait illustré de Nicole-Reine Lepaute" width="480" height="820" decoding="async" />
+                </div>
+
+                <h1 class="hero__title" id="hero-title">
+                    L’effet Matilda :<br />
+                    Nicole-Reine Lepaute
+                </h1>
+            </div>
+
+            <div class="hero__chapo chapo container">
+                <p class="chapo__text">
+                    Les femmes de science ont souvent été effacées de l’Histoire.
+                    Ce site rend hommage à Nicole-Reine Lepaute, astronome française du
+                    XVIII<sup>e</sup> siècle, qui calcula avec précision le retour de la
+                    comète de Halley, sans jamais recevoir la gloire qu’elle méritait.
+                </p>
+            </div>
+        </section>
+
+        <!-- BIO -->
+        <section class="section container" aria-labelledby="bio-title">
+            <header class="section__header">
+                <h2 class="section__title" id="bio-title">
+                    Biographie – Nicole-Reine Lepaute (1723–1788)
+                </h2>
+            </header>
+
+            <figure class="figure figure--bio">
+                <img src="/assets/img/articles/lepaute-portrait.avif" alt="Portrait gravé de Nicole-Reine Lepaute"
+                    width="720" height="720" loading="lazy" decoding="async" />
+                <figcaption class="figure__caption">
+                    Portrait de Nicole-Reine Lepaute (reproduction).
+                </figcaption>
+            </figure>
+
+            <div class="section__content">
+                <p>
+                    Nicole-Reine Lepaute est une astronome et mathématicienne française
+                    du XVIII<sup>e</sup> siècle. Passionnée par les sciences, elle
+                    collabore avec Jérôme Lalande et Alexis Clairaut pour calculer avec
+                    une grande précision le retour de la comète de Halley (1759), un
+                    exploit reconnu dans toute l’Europe.
+                </p>
+
+                <p>
+                    Elle contribue aussi à la création d’un calendrier astronomique et à
+                    la mesure du temps pour les horlogers royaux. Malgré ses talents,
+                    son travail est souvent attribué à ses collègues masculins.
+                </p>
+
+                <blockquote class="quote">
+                    <p class="quote__text">
+                        « Oublier Nicole-Reine Lepaute, c’est oublier une partie de notre
+                        histoire scientifique. »
+                    </p>
+                    <cite class="quote__cite">— Synthèse pédagogique (site Matilda)</cite>
+                </blockquote>
+
+                <p>
+                    L’effet Matilda décrit aujourd’hui le combat pour la reconnaissance
+                    des femmes scientifiques et de leurs contributions. Pour en savoir
+                    plus, découvre nos articles et notre glossaire.
+                </p>
+
+                <a class="morelink" href="/fr/articles/lepaute.html">Plus d’info…</a>
+            </div>
+        </section>
+
+        <!-- LISTE DES ARTICLES (cards) -->
+        <section class="section container" aria-labelledby="articles-title">
+            <header class="section__header">
+                <h2 class="section__title" id="articles-title">Explorer les contenus</h2>
+                <p class="section__intro">
+                    Une sélection d’articles, de ressources culturelles et de références
+                    pour mieux comprendre l’effet Matilda.
+                </p>
+            </header>
+
+            <article class="section__card card">
+                <div class="card__img duotone">
+                    <img src="/assets/img/articles/article-decouvertes-halley.avif"
+                        alt="Illustration astronomique liée à la comète de Halley" width="981" height="750"
+                        loading="lazy" decoding="async" />
+                </div>
+                <h3 class="card__title">
+                    <a class="card__title-link" href="/fr/articles/mecanique-celeste.html">
+                        Ses découvertes et réalisations
+                    </a>
+                </h3>
+                <div class="card__caption">
+                    <p class="card__excerpt">
+                        L’astronomie du XVIIIe siècle, le calcul du retour de Halley et le
+                        rôle concret de Nicole-Reine Lepaute.
+                    </p>
+                    <a class="card__link morelink" href="/fr/articles/mecanique-celeste.html">
+                        Plus d’info…
+                    </a>
+                </div>
+            </article>
+
+            <article class="section__card card">
+                <div class="card__img duotone">
+                    <img src="/assets/img/articles/books-women-in-stem.avif"
+                        alt="Couverture d’un livre sur les femmes en sciences" width="981" height="750" loading="lazy"
+                        decoding="async" />
+                </div>
+                <h3 class="card__title">
+                    <a class="card__title-link" href="/fr/articles/litterature.html">
+                        Femmes de science dans la littérature
+                    </a>
+                </h3>
+                <div class="card__caption">
+                    <p class="card__excerpt">
+                        Comment les livres racontent (ou oublient) les parcours des femmes
+                        scientifiques.
+                    </p>
+                    <a class="card__link morelink" href="/fr/articles/litterature.html">
+                        Plus d’info…
+                    </a>
+                </div>
+            </article>
+
+            <article class="section__card card">
+                <div class="card__img duotone">
+                    <img src="/assets/img/articles/vulgarisation.avif"
+                        alt="Schéma ancien de constellation ou carte céleste" width="981" height="750" loading="lazy"
+                        decoding="async" />
+                </div>
+                <h3 class="card__title">
+                    <a class="card__title-link" href="/fr/articles/vulgarisation.html">
+                        Vulgarisation scientifique
+                    </a>
+                </h3>
+                <div class="card__caption">
+                    <p class="card__excerpt">
+                        Découvrir l’univers à travers des récits, des cartes et des
+                        expériences accessibles.
+                    </p>
+                    <a class="card__link morelink" href="/fr/articles/vulgarisation.html">
+                        Plus d’info…
+                    </a>
+                </div>
+            </article>
+
+            <article class="section__card card">
+                <div class="card__img duotone">
+                    <img src="/assets/img/articles/contact-film.avif"
+                        alt="Image en noir et blanc liée au film Contact (1997)" width="981" height="750" loading="lazy"
+                        decoding="async" />
+                </div>
+                <h3 class="card__title">
+                    <a class="card__title-link" href="/fr/articles/contact-film.html">
+                        Film Contact (1997)
+                    </a>
+                </h3>
+                <div class="card__caption">
+                    <p class="card__excerpt">
+                        Quand la science-fiction donne enfin la place à une femme
+                        scientifique au centre de l’histoire.
+                    </p>
+                    <a class="card__link morelink" href="/fr/articles/contact-film.html">
+                        Plus d’info…
+                    </a>
+                </div>
+            </article>
+
+            <article class="section__card card">
+                <div class="card__img duotone">
+                    <img src="/assets/img/articles/17-femmes-nobel.avif"
+                        alt="Affiche ou couverture évoquant 17 femmes prix Nobel" width="981" height="750"
+                        loading="lazy" decoding="async" />
+                </div>
+                <h3 class="card__title">
+                    <a class="card__title-link" href="/fr/articles/objet-bu.html">
+                        Livre : 17 femmes prix Nobel de sciences
+                    </a>
+                </h3>
+                <div class="card__caption">
+                    <p class="card__excerpt">
+                        Un hommage écrit au laboratoire et aux trajectoires souvent
+                        invisibilisées.
+                    </p>
+                    <a class="card__link morelink" href="/fr/articles/objet-bu.html">
+                        Plus d’info…
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer (comme ta maquette : A propos + autres projets + mention) -->
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <section class="footer__col" aria-labelledby="about-title">
+                <h2 class="footer__title" id="about-title">À propos</h2>
+                <p class="footer__text">
+                    Je m’appelle Nargis Ayyobi, étudiante en MMi à Montbéliard.
+                    Ce projet individuel s’inscrit dans une démarche de valorisation des
+                    femmes en science. J’ai choisi Nicole-Reine Lepaute, pionnière de
+                    l’astronomie, comme symbole de persévérance et de savoir.
+                </p>
+            </section>
+
+            <section class="footer__col" aria-labelledby="projects-title">
+                <h2 class="footer__title" id="projects-title">Autres projets</h2>
+
+                <p class="footer__text">
+                    Découvrez les autres projets du groupe MMi autour de l’effet Matilda :
+                </p>
+
+                <ul class="footer__list u-list-unstyled">
+                    <li><a class="footer__link" href="#">Barbaraus Fatima</a></li>
+                    <li><a class="footer__link" href="#">Bakriay Leila</a></li>
+                    <li><a class="footer__link" href="#">Garcia Lucie</a></li>
+                    <li><a class="footer__link" href="#">GIGI Emanuele Evan</a></li>
+                    <li><a class="footer__link" href="#">GAYEILLO Noah</a></li>
+                    <li><a class="footer__link" href="#">HANVI Brahim</a></li>
+                    <li><a class="footer__link" href="#">HENRY Marine</a></li>
+                    <li><a class="footer__link" href="#">LAURENT Leslie</a></li>
+                    <li><a class="footer__link" href="#">LOCATELLI Tylan</a></li>
+                    <li><a class="footer__link" href="#">PHILBERT Théo</a></li>
+                    <li><a class="footer__link" href="#">PRAMLAXD Leona</a></li>
+                    <li><a class="footer__link" href="#">RALWBOQ Mahley</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <p class="footer__legal">
+            Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département
+            <a class="footer__legal-link" href="https://www.iut-bm.univ-fcomte.fr/" target="_blank"
+                rel="noopener noreferrer">
+                MMi de Montbéliard
+            </a>.
+        </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="/src/js/menu.js" defer></script>
 </body>
+
 </html>
