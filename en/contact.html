@@ -1,22 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact — Individual Project</title>
-    <!-- Google Fonts: Open Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- Favicons -->
-  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
-  <link rel="icon" href="/assets/favicons/favicon.ico" />
-  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact me: contact form for The Matilda Effect project." />
+
+    <title>The Matilda Effect — Contact</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="/src/css/style.css" />
 </head>
+
 <body>
-  <h1>Contact (EN)</h1>
-  <form>
-    <!-- contact form placeholder -->
-  </form>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- HEADER -->
+    <header class="header container">
+        <div class="header__start">
+            <a class="header__brand" href="/en/">
+                <img class="header__logo" src="/assets/icons/logo-nicole.svg" alt="Nicole-Reine Lepaute logo"
+                    width="110" height="28" />
+            </a>
+        </div>
+
+        <div class="header__end">
+            <a class="language-btn" href="/fr/contact.html">FR/<span>EN</span></a>
+
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Menu" aria-expanded="false"
+                aria-controls="mainNav">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+                <ul class="menu__list u-list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/en/">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/glossary.html">Glossary</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/other-projects.html">Other projects</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/en/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main">
+        <section class="section container" aria-labelledby="contact-title">
+            <header class="section__header">
+                <h1 class="section__title" id="contact-title">Contact Me</h1>
+            </header>
+
+            <form class="form" action="#" method="post" aria-describedby="contact-help">
+                <p class="form__help" id="contact-help">
+                    Fields marked with an asterisk (*) are required.
+                </p>
+
+                <div class="form__field">
+                    <label class="form__label" for="name">Name *</label>
+                    <input class="form__input" type="text" id="name" name="name" autocomplete="name" required
+                        placeholder="Name" />
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label" for="email">Email *</label>
+                    <input class="form__input" type="email" id="email" name="email" autocomplete="email" required
+                        placeholder="Email" />
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label" for="subject">Subject *</label>
+                    <input class="form__input" type="text" id="subject" name="subject" required placeholder="Subject" />
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label" for="message">Message *</label>
+                    <textarea class="form__textarea" id="message" name="message" rows="8" required
+                        placeholder="Message"></textarea>
+                </div>
+
+                <button class="form__submit" type="submit">SEND</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__wrapper container">
+            <section class="footer__about" aria-labelledby="footer-about-title">
+                <h2 class="footer__title" id="footer-about-title">ABOUT</h2>
+                <p class="footer__text">
+                    My name is Nargis Ayyobi, an MMi student in Montbéliard.<br />
+                    This individual S1 project explores the “Matilda Effect”, a phenomenon that makes women in science
+                    invisible.<br />
+                    I chose Nicole-Reine Lepaute, a pioneer of astronomy, as a symbol of perseverance and knowledge.
+                </p>
+            </section>
+
+            <section class="footer__contact" aria-labelledby="footer-contact-title">
+                <h2 class="footer__title" id="footer-contact-title">Contact</h2>
+
+                <address class="footer__address">
+                    <span class="footer__line">UT Nord Franche-Comté</span><br />
+                    <span class="footer__line">19 avenue du Maréchal Juin</span><br />
+                    <span class="footer__line">BP 527</span><br />
+                    <span class="footer__line">90016 Belfort Cedex</span><br /><br />
+
+                    <a class="footer__link" href="tel:+33384587700">+33 (0)3 84 58 77 00</a><br />
+                    <a class="footer__link" href="mailto:but-mmi-montbeliard@univ-fcomte.fr">
+                        but-mmi-montbeliard@univ-fcomte.fr
+                    </a>
+                </address>
+            </section>
+        </div>
+
+        <p class="footer__legal">
+            Project completed in 2025 as part of an educational exercise in the
+            <a class="footer__legal-link" href="https://www.iut-bm.univ-fcomte.fr/" target="_blank"
+                rel="noopener noreferrer">MMi Montbéliard</a>
+            department.
+        </p>
+    </footer>
+
+    <script src="/src/js/menu.js" defer></script>
 </body>
+
 </html>
