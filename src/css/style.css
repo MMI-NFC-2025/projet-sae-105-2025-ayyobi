@@ -1,3 +1,27 @@
 /* main stylesheet: imports */
+/* Vendors */
 @import "vendors/normalize.css";
+
+/* Base (tokens, typography, global, accessibility) */
 @import "base/variables.css";
+@import "base/typography.css";
+@import "base/global.css";
+@import "base/accessibility.css";
+
+/* Layout */
+@import "layout/header.css";
+@import "layout/nav.css";
+@import "layout/footer.css";
+@import "layout/page.css";
+
+/* Components */
+@import "components/card.css";
+@import "components/article.css";
+@import "components/callout.css";
+@import "components/timeline.css";
+@import "components/glossary.css";
+@import "components/gallery.css";
+@import "components/form.css";
+
+/* Utilities */
+@import "utils/helpers.css";
