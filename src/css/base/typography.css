@@ -1,2 +1,12 @@
 /* typography rules */
-body { font-family: system-ui, sans-serif; }
+/* Principal font: Open Sans (Google Fonts). Serif fallback: Georgia */
+body {
+	font-family: 'Open Sans', Georgia, serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings use Georgia for a classic serif feel */
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, 'Times New Roman', serif;
+}
