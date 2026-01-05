@@ -1,15 +1,310 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Celestial Mechanics — Article</title>
-  <!-- Google Fonts: Open Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home — Individual Project</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="icon" href="/assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
+    <!-- Google Fonts: Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <h1>Celestial Mechanics</h1>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header container">
+        <div class="header__start">
+            <a class="header__brand" href="/en/">
+                <img class="header__logo" src="/assets/icons/logo-nicole.svg" alt="Nicole-Reine Lepaute logo"
+                    width="110" height="28" />
+            </a>
+        </div>
+
+        <div class="header__end">
+            <!-- same UI, translated only -->
+            <a class="language-btn" href="/fr/">FR/<span>EN</span></a>
+
+            <button class="header__menu-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="mainNav">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+                <ul class="menu__list u-list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/">Home</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/articles/lepaute.html">Articles</a>
+
+                        <ul class="menu__sublist u-list-unstyled" aria-label="Articles submenu">
+                            <li class="menu__subitem">
+                                <a class="menu__sublink" href="/en/articles/lepaute.html">Nicole-Reine Lepaute</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a class="menu__sublink" href="/en/articles/literature.html">Women in science</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a class="menu__sublink" href="/en/articles/popular-science.html">Science
+                                    communication</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a class="menu__sublink" href="/en/articles/film-contact.html">Contact (1997)</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a class="menu__sublink" href="/en/articles/library-object.html">Book: 17 women Nobel
+                                    Prize winners in science</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/glossary.html">Glossary</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a class="menu__link" href="/en/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__header container">
+                <div class="hero__img duotone">
+                    <img src="/assets/img/ui/hero-nicole-reine-lepaute.avif"
+                        alt="Illustrated portrait of Nicole-Reine Lepaute" width="480" height="820" decoding="async" />
+                </div>
+
+                <h1 class="hero__title" id="hero-title">
+                    The Matilda Effect:<br />
+                    Nicole-Reine Lepaute
+                </h1>
+            </div>
+
+            <div class="hero__chapo chapo container">
+                <p class="chapo__text">
+                    Women in science have often been erased from History. This site pays
+                    tribute to Nicole-Reine Lepaute, an 18th-century French astronomer
+                    who calculated the return of Halley’s Comet with great accuracy—yet
+                    never received the recognition she deserved.
+                </p>
+            </div>
+        </section>
+
+        <section class="section container" aria-labelledby="bio-title">
+            <header class="section__header">
+                <h2 class="section__title" id="bio-title">
+                    Biography — Nicole-Reine Lepaute (1723–1788)
+                </h2>
+            </header>
+
+            <figure class="figure figure--bio">
+                <img src="/assets/img/articles/lepaute-portrait.avif" alt="Engraved portrait of Nicole-Reine Lepaute"
+                    width="720" height="720" loading="lazy" decoding="async" />
+                <figcaption class="figure__caption">
+                    Portrait of Nicole-Reine Lepaute (reproduction).
+                </figcaption>
+            </figure>
+
+            <div class="section__content">
+                <p>
+                    Nicole-Reine Lepaute was an 18th-century French astronomer and
+                    mathematician. Passionate about science, she worked with Jérôme
+                    Lalande and Alexis Clairaut to compute the return of Halley’s Comet
+                    (1759) with remarkable precision.
+                </p>
+
+                <p>
+                    She also contributed to astronomical calendars and timekeeping for
+                    royal clockmakers. Despite her talent, her work was often credited
+                    to her male colleagues.
+                </p>
+
+                <blockquote class="quote">
+                    <p class="quote__text">
+                        “Forgetting Nicole-Reine Lepaute means forgetting part of our
+                        scientific history.”
+                    </p>
+                    <cite class="quote__cite">— Educational summary (Matilda site)</cite>
+                </blockquote>
+
+                <p>
+                    The Matilda Effect describes the struggle for recognition of women
+                    scientists and their contributions. To learn more, explore our
+                    articles and glossary.
+                </p>
+
+                <a class="morelink" href="/en/articles/lepaute.html">Learn more…</a>
+            </div>
+        </section>
+
+        <section class="section container" aria-labelledby="articles-title">
+            <header class="section__header">
+                <h2 class="section__title" id="articles-title">Explore the content</h2>
+                <p class="section__intro">
+                    A selection of articles, cultural references and resources to better
+                    understand the Matilda Effect.
+                </p>
+            </header>
+
+            <article class="section__card card">
+                <div class="card__img duotone">
+                    <img src="/assets/img/articles/article-decouvertes-halley.avif"
+                        alt="Astronomical illustration related to Halley’s Comet" width="981" height="750"
+                        loading="lazy" decoding="async" />
+                </div>
+                <h3 class="card__title">
+                    <a class="card__title-link" href="/en/articles/celestial-mechanics.html">
+                        Discoveries and achievements
+                    </a>
+                </h3>
+                <div class="card__caption">
+                    <p class="card__excerpt">
+                        18th-century astronomy, Halley’s Comet calculations, and Nicole-Reine
+                        Lepaute’s concrete role.
+                    </p>
+                    <a class="card__link morelink" href="/en/articles/celestial-mechanics.html">
+                        Learn more…
+                    </a>
+                </div>
+            </article>
+
+            <article class="section__card card">
+                <div class="card__img duotone">
+                    <img src="/assets/img/articles/books-women-in-stem.avif" alt="Book cover about women in STEM"
+                        width="981" height="750" loading="lazy" decoding="async" />
+                </div>
+                <h3 class="card__title">
+                    <a class="card__title-link" href="/en/articles/literature.html">
+                        Women in science in literature
+                    </a>
+                </h3>
+                <div class="card__caption">
+                    <p class="card__excerpt">
+                        How books portray (or overlook) women scientists’ journeys.
+                    </p>
+                    <a class="card__link morelink" href="/en/articles/literature.html">
+                        Learn more…
+                    </a>
+                </div>
+            </article>
+
+            <article class="section__card card">
+                <div class="card__img duotone">
+                    <img src="/assets/img/articles/vulgarisation.avif" alt="Old constellation diagram or star map"
+                        width="981" height="750" loading="lazy" decoding="async" />
+                </div>
+                <h3 class="card__title">
+                    <a class="card__title-link" href="/en/articles/popular-science.html">
+                        Science communication
+                    </a>
+                </h3>
+                <div class="card__caption">
+                    <p class="card__excerpt">
+                        Discover the universe through stories, maps and accessible
+                        explanations.
+                    </p>
+                    <a class="card__link morelink" href="/en/articles/popular-science.html">
+                        Learn more…
+                    </a>
+                </div>
+            </article>
+
+            <article class="section__card card">
+                <div class="card__img duotone">
+                    <img src="/assets/img/articles/contact-film.avif"
+                        alt="Black-and-white image related to the film Contact (1997)" width="981" height="750"
+                        loading="lazy" decoding="async" />
+                </div>
+                <h3 class="card__title">
+                    <a class="card__title-link" href="/en/articles/film-contact.html">
+                        Contact (1997)
+                    </a>
+                </h3>
+                <div class="card__caption">
+                    <p class="card__excerpt">
+                        When science fiction finally puts a woman scientist at the center
+                        of the story.
+                    </p>
+                    <a class="card__link morelink" href="/en/articles/film-contact.html">
+                        Learn more…
+                    </a>
+                </div>
+            </article>
+
+            <article class="section__card card">
+                <div class="card__img duotone">
+                    <img src="/assets/img/articles/17-femmes-nobel.avif"
+                        alt="Cover or poster referencing 17 women Nobel Prize winners" width="981" height="750"
+                        loading="lazy" decoding="async" />
+                </div>
+                <h3 class="card__title">
+                    <a class="card__title-link" href="/en/articles/library-object.html">
+                        Book: 17 women Nobel Prize winners in science
+                    </a>
+                </h3>
+                <div class="card__caption">
+                    <p class="card__excerpt">
+                        A written tribute to labs and often-invisible scientific careers.
+                    </p>
+                    <a class="card__link morelink" href="/en/articles/library-object.html">
+                        Learn more…
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer__wrapper container">
+            <section class="footer__about" aria-labelledby="footer-about-title">
+                <h2 class="footer__title" id="footer-about-title">ABOUT</h2>
+                <p class="footer__text">
+                    My name is Nargis Ayyobi, a student in MMi in Montbéliard.<br />
+                    This individual S1 project explores the “Matilda Effect”, a
+                    phenomenon that makes women in science invisible.<br />
+                    I chose Nicole-Reine Lepaute, a pioneer of astronomy, as a symbol of
+                    perseverance and knowledge.
+                </p>
+            </section>
+
+            <section class="footer__contact" aria-labelledby="footer-contact-title">
+                <h2 class="footer__title" id="footer-contact-title">Contact</h2>
+
+                <address class="footer__address">
+                    <span class="footer__line">UT Nord Franche-Comté</span><br />
+                    <span class="footer__line">19 avenue du Maréchal Juin</span><br />
+                    <span class="footer__line">BP 527</span><br />
+                    <span class="footer__line">90016 Belfort Cedex</span><br /><br />
+
+                    <a class="footer__link" href="tel:+33384587700">+33 (0)3 84 58 77 00</a>
+                    <br />
+                    <a class="footer__link" href="mailto:but-mmi-montbeliard@univ-fcomte.fr">
+                        but-mmi-montbeliard@univ-fcomte.fr
+                    </a>
+                </address>
+            </section>
+        </div>
+
+        <p class="footer__legal">
+            Project completed in 2025 as part of an educational exercise in the
+            <a class="footer__legal-link" href="https://www.iut-bm.univ-fcomte.fr/" target="_blank"
+                rel="noopener noreferrer">MMi Montbéliard</a>
+            department.
+        </p>
+    </footer>
+
+    <script src="/src/js/menu.js" defer></script>
 </body>
+
 </html>
