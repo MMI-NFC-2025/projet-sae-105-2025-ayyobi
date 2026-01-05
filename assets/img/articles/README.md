@@ -1,0 +1,1 @@
+Images liées aux articles.
