@@ -117,76 +117,66 @@
                 </p>
             </section>
 
-            <!-- BOOKS = glossary (dl/dt/dd) -->
+            <!-- BOOKS = Carousel -->
             <section class="article__section" aria-labelledby="works-title">
                 <h2 class="article__subtitle" id="works-title">Books</h2>
 
-                <dl class="glossary glossary--works">
-                    <div class="glossary__entry" id="work-women-in-science">
-                        <dt class="glossary__term">
-                            <span class="glossary__term-text">Women in Science</span>
-                        </dt>
-                        <dd class="glossary__def">
-                            <figure class="glossary__figure figure">
-                                <img src="/assets/img/articles/women-in-science-book.avif"
+                <div class="carousel" id="books-carousel">
+                    <div class="carousel__container">
+                        <div class="carousel__slide">
+                            <figure class="carousel__figure figure">
+                                <img src="../../assets/img/livre/women-science.avif"
                                     alt="Cover of the book Women in Science" width="981" height="750" loading="lazy"
                                     decoding="async" />
                                 <figcaption class="figure__caption">
+                                    <strong>Women in Science</strong><br>
                                     An illustrated book celebrating 50 pioneers of science, accessible to all ages.
                                 </figcaption>
                             </figure>
-                        </dd>
-                    </div>
-
-                    <div class="glossary__entry" id="work-grandes-oubliees">
-                        <dt class="glossary__term">
-                            <span class="glossary__term-text">Les grandes oubliées — Why History erased women</span>
-                        </dt>
-                        <dd class="glossary__def">
-                            <figure class="glossary__figure figure">
-                                <img src="/assets/img/articles/les-grandes-oubliees.avif"
+                        </div>
+                        <div class="carousel__slide">
+                            <figure class="carousel__figure figure">
+                                <img src="../../assets/img/livre/les-oubliees.avif"
                                     alt="Cover of the book Les grandes oubliées" width="981" height="750" loading="lazy"
                                     decoding="async" />
                                 <figcaption class="figure__caption">
-                                    A striking essay about erased women and the need to rewrite our collective
-                                    narrative.
+                                    <strong>Les grandes oubliées — Why History erased women</strong><br>
+                                    A striking essay about erased women and the need to rewrite our collective narrative.
                                 </figcaption>
                             </figure>
-                        </dd>
-                    </div>
-
-                    <div class="glossary__entry" id="work-einstein">
-                        <dt class="glossary__term">
-                            <span class="glossary__term-text">Einstein (illustrated project)</span>
-                        </dt>
-                        <dd class="glossary__def">
-                            <figure class="glossary__figure figure">
-                                <img src="/assets/img/articles/einstein-projet.avif"
+                        </div>
+                        <div class="carousel__slide">
+                            <figure class="carousel__figure figure">
+                                <img src="../../assets/img/livre/matilda.avif"
                                     alt="Illustration with the word Einstein above a character" width="981" height="750"
                                     loading="lazy" decoding="async" />
                                 <figcaption class="figure__caption">
+                                    <strong>Einstein (illustrated project)</strong><br>
                                     An activist project imagining a world where women scientists were never forgotten.
                                 </figcaption>
                             </figure>
-                        </dd>
-                    </div>
-
-                    <div class="glossary__entry" id="work-17-femmes-nobel">
-                        <dt class="glossary__term">
-                            <span class="glossary__term-text">17 women Nobel Prize winners in science</span>
-                        </dt>
-                        <dd class="glossary__def">
-                            <figure class="glossary__figure figure">
-                                <img src="/assets/img/articles/17-femmes-nobel.avif"
+                        </div>
+                        <div class="carousel__slide">
+                            <figure class="carousel__figure figure">
+                                <img src="../../assets/img/livre/17-femmes.avif"
                                     alt="Cover: 17 women Nobel Prize winners in science" width="981" height="750"
                                     loading="lazy" decoding="async" />
                                 <figcaption class="figure__caption">
+                                    <strong>17 women Nobel Prize winners in science</strong><br>
                                     An inspiring panorama of Nobel laureates, symbol of a slow conquest of recognition.
                                 </figcaption>
                             </figure>
-                        </dd>
+                        </div>
                     </div>
-                </dl>
+                    <button class="carousel__prev" aria-label="Previous book">&larr;</button>
+                    <button class="carousel__next" aria-label="Next book">&rarr;</button>
+                    <div class="carousel__indicators">
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                        <span class="indicator" data-slide="3"></span>
+                    </div>
+                </div>
             </section>
 
             <blockquote class="quote">
@@ -251,6 +241,7 @@
         </p>
     </footer>
 
+    <script src="/src/js/carousel.js" defer></script>
     <script src="/src/js/menu.js" defer></script>
 </body>
 

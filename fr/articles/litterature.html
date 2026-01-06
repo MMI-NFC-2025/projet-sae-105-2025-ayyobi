@@ -131,79 +131,66 @@
                 </p>
             </section>
 
-            <!-- OUVRAGES = glossaire (dl/dt/dd) -->
+            <!-- OUVRAGES = Carousel -->
             <section class="article__section" aria-labelledby="works-title">
                 <h2 class="article__subtitle" id="works-title">Les ouvrages</h2>
 
-                <dl class="glossary glossary--works">
-                    <div class="glossary__entry" id="work-women-in-science">
-                        <dt class="glossary__term">
-                            <span class="glossary__term-text">Women in Science</span>
-                        </dt>
-                        <dd class="glossary__def">
-                            <figure class="glossary__figure figure">
-                                <img src="/assets/img/articles/women-in-science-book.avif"
+                <div class="carousel" id="books-carousel">
+                    <div class="carousel__container">
+                        <div class="carousel__slide">
+                            <figure class="carousel__figure figure">
+                                <img src="../../assets/img/livre/women-science.avif"
                                     alt="Couverture du livre Women in Science" width="981" height="750" loading="lazy"
                                     decoding="async" />
                                 <figcaption class="figure__caption">
+                                    <strong>Women in Science</strong><br>
                                     Un livre illustré célébrant 50 pionnières de la science, accessible à tous les âges.
                                 </figcaption>
                             </figure>
-                        </dd>
-                    </div>
-
-                    <div class="glossary__entry" id="work-grandes-oubliees">
-                        <dt class="glossary__term">
-                            <span class="glossary__term-text">Les grandes oubliées — Pourquoi l’Histoire a effacé les
-                                femmes</span>
-                        </dt>
-                        <dd class="glossary__def">
-                            <figure class="glossary__figure figure">
-                                <img src="/assets/img/articles/les-grandes-oubliees.avif"
+                        </div>
+                        <div class="carousel__slide">
+                            <figure class="carousel__figure figure">
+                                <img src="../../assets/img/livre/les-oubliees.avif"
                                     alt="Couverture du livre Les grandes oubliées : Pourquoi l’Histoire a effacé les femmes"
                                     width="981" height="750" loading="lazy" decoding="async" />
                                 <figcaption class="figure__caption">
-                                    Un essai percutant sur les femmes effacées de l’Histoire et la nécessité de réécrire
-                                    le récit collectif.
+                                    <strong>Les grandes oubliées — Pourquoi l’Histoire a effacé les femmes</strong><br>
+                                    Un essai percutant sur les femmes effacées de l’Histoire et la nécessité de réécrire le récit collectif.
                                 </figcaption>
                             </figure>
-                        </dd>
-                    </div>
-
-                    <div class="glossary__entry" id="work-einstein">
-                        <dt class="glossary__term">
-                            <span class="glossary__term-text">Einstein (projet illustré)</span>
-                        </dt>
-                        <dd class="glossary__def">
-                            <figure class="glossary__figure figure">
-                                <img src="/assets/img/articles/einstein-projet.avif"
+                        </div>
+                        <div class="carousel__slide">
+                            <figure class="carousel__figure figure">
+                                <img src="../../assets/img/livre/matilda.avif"
                                     alt="Illustration d’un personnage avec le mot Einstein en haut" width="981"
                                     height="750" loading="lazy" decoding="async" />
                                 <figcaption class="figure__caption">
-                                    Un projet militant qui imagine un monde où les femmes scientifiques n’auraient
-                                    jamais été oubliées.
+                                    <strong>Einstein (projet illustré)</strong><br>
+                                    Un projet militant qui imagine un monde où les femmes scientifiques n’auraient jamais été oubliées.
                                 </figcaption>
                             </figure>
-                        </dd>
-                    </div>
-
-                    <div class="glossary__entry" id="work-17-femmes-nobel">
-                        <dt class="glossary__term">
-                            <span class="glossary__term-text">17 femmes prix Nobel de sciences</span>
-                        </dt>
-                        <dd class="glossary__def">
-                            <figure class="glossary__figure figure">
-                                <img src="/assets/img/articles/17-femmes-nobel.avif"
+                        </div>
+                        <div class="carousel__slide">
+                            <figure class="carousel__figure figure">
+                                <img src="../../assets/img/livre/17-femmes.avif"
                                     alt="Couverture 17 femmes prix Nobel de sciences" width="981" height="750"
                                     loading="lazy" decoding="async" />
                                 <figcaption class="figure__caption">
-                                    Un panorama inspirant des lauréates du Nobel, symbole d’une lente conquête de
-                                    reconnaissance.
+                                    <strong>17 femmes prix Nobel de sciences</strong><br>
+                                    Un panorama inspirant des lauréates du Nobel, symbole d’une lente conquête de reconnaissance.
                                 </figcaption>
                             </figure>
-                        </dd>
+                        </div>
                     </div>
-                </dl>
+                    <button class="carousel__prev" aria-label="Livre précédent">&larr;</button>
+                    <button class="carousel__next" aria-label="Livre suivant">&rarr;</button>
+                    <div class="carousel__indicators">
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                        <span class="indicator" data-slide="3"></span>
+                    </div>
+                </div>
             </section>
 
             <blockquote class="quote">
@@ -268,6 +255,7 @@
         </p>
     </footer>
 
+    <script src="/src/js/carousel.js" defer></script>
     <script src="/src/js/menu.js" defer></script>
 </body>
 
