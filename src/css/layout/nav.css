@@ -1,1 +1,156 @@
 /* nav/menu styles */
+/* =========================
+   Bouton Burger
+========================= */
+.menu-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-gray-anthracite);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Barres */
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: var(--color-off-white);
+    border-radius: 2px;
+    position: absolute;
+    transition: transform 0.35s ease, opacity 0.25s ease;
+}
+
+.menu-btn__bar::before {
+    transform: translateY(-6px);
+}
+
+.menu-btn__bar::after {
+    transform: translateY(6px);
+}
+
+/* État ouvert → croix */
+.menu-btn.is-open .menu-btn__bar {
+    background-color: transparent;
+}
+
+.menu-btn.is-open .menu-btn__bar::before {
+    transform: rotate(45deg);
+}
+
+.menu-btn.is-open .menu-btn__bar::after {
+    transform: rotate(-45deg);
+}
+
+/* =========================
+   Overlay menu
+========================= */
+.menu {
+    position: fixed;
+    inset: 0;
+    background-color: var(--color-gray-anthracite-66);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+    z-index: 1000;
+}
+
+/* Menu ouvert */
+.menu[aria-hidden="false"] {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* =========================
+   Carte centrale
+========================= */
+.menu__list {
+    width: min(90%, 420px);
+    background-color: var(--color-gray-anthracite);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+
+    /* animation entrée */
+    transform: translateY(24px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.menu[aria-hidden="false"] .menu__list {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* =========================
+   Liens principaux
+========================= */
+.menu__item+.menu__item {
+    margin-top: var(--space-3);
+}
+
+.menu__link {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 14px;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-uppercase);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--color-off-white);
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.menu__link:hover {
+    text-decoration: none;
+    background-color: rgba(247, 245, 240, 0.08);
+    transform: translateX(4px);
+}
+
+/* =========================
+   Sous-menu (articles)
+========================= */
+.menu__sublist {
+    margin-top: var(--space-2);
+    padding-left: var(--space-3);
+}
+
+.menu__subitem+.menu__subitem {
+    margin-top: var(--space-2);
+}
+
+.menu__sublink {
+    display: block;
+    padding: 0.45rem 0.75rem;
+    border-radius: 12px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: rgba(247, 245, 240, 0.85);
+    transition: background-color 0.25s ease;
+}
+
+.menu__sublink:hover {
+    text-decoration: none;
+    background-color: rgba(247, 245, 240, 0.08);
+}
+
+/* =========================
+   Accessibilité / focus
+========================= */
+.menu__link:focus-visible,
+.menu__sublink:focus-visible {
+    outline: 3px solid var(--color-gold-yellow);
+    outline-offset: 3px;
+}
