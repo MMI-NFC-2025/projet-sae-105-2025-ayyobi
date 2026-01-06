@@ -102,18 +102,3 @@
     outline-offset: 0.25rem;
     border-radius: 0.5rem;
 }
-
-/* =========================
-   Responsive (tablette+)
-========================= */
-@media (min-width: 42.5rem) {
-    .footer__wrapper {
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        padding: 4.5rem 2rem 3.5rem;
-    }
-
-    .footer__text {
-        max-width: 50ch;
-    }
-}
