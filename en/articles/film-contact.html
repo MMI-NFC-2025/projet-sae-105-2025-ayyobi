@@ -148,71 +148,62 @@
                 </figure>
             </section>
 
-            <!-- SLIDER (films & series) -->
+            <!-- CAROUSEL (films & series) -->
             <section class="article__section" aria-labelledby="slider-title">
                 <h2 class="article__subtitle" id="slider-title">Films and series about the Matilda Effect</h2>
 
-                <div class="carousel" data-carousel aria-roledescription="carousel">
-                    <div class="carousel__header">
-                        <p class="carousel__hint" id="carousel-hint">
-                            Swipe/scroll to discover more titles.
-                        </p>
-
-                        <div class="carousel__controls" aria-label="Carousel controls">
-                            <button class="carousel__btn carousel__btn--prev" type="button"
-                                aria-label="Go to previous item" aria-controls="carousel-track">
-                                ←
-                            </button>
-
-                            <button class="carousel__btn carousel__btn--next" type="button" aria-label="Go to next item"
-                                aria-controls="carousel-track">
-                                →
-                            </button>
-                        </div>
-                    </div>
-
-                    <ul class="carousel__track" id="carousel-track" aria-describedby="carousel-hint">
-                        <li class="carousel__slide">
+                <div class="carousel" id="films-carousel">
+                    <div class="carousel__container">
+                        <div class="carousel__slide">
                             <figure class="carousel__figure figure">
-                                <img src="/assets/img/slider/hidden-figures.avif"
+                                <img src="../../assets/img/films/hidden-figures.avif"
                                     alt="Poster for the film Hidden Figures" width="480" height="720" loading="lazy"
                                     decoding="async" />
-                                <figcaption class="carousel__caption">
-                                    <strong>Hidden Figures</strong>: mathematicians essential to the space race.
+                                <figcaption class="figure__caption">
+                                    <strong>Hidden Figures</strong><br>
+                                    Mathematicians essential to the space race.
                                 </figcaption>
                             </figure>
-                        </li>
-
-                        <li class="carousel__slide">
+                        </div>
+                        <div class="carousel__slide">
                             <figure class="carousel__figure figure">
-                                <img src="/assets/img/slider/contact-poster.avif" alt="Poster for the film Contact"
+                                <img src="../../assets/img/films/contact-film.avif" alt="Poster for the film Contact"
                                     width="480" height="720" loading="lazy" decoding="async" />
-                                <figcaption class="carousel__caption">
-                                    <strong>Contact</strong>: a woman scientist at the center of the story.
+                                <figcaption class="figure__caption">
+                                    <strong>Contact</strong><br>
+                                    A woman scientist at the center of the story.
                                 </figcaption>
                             </figure>
-                        </li>
-
-                        <li class="carousel__slide">
+                        </div>
+                        <div class="carousel__slide">
                             <figure class="carousel__figure figure">
-                                <img src="/assets/img/slider/enola-holmes-2.avif" alt="Poster for Enola Holmes 2"
+                                <img src="../../assets/img/films/enola.avif" alt="Poster for Enola Holmes 2"
                                     width="480" height="720" loading="lazy" decoding="async" />
-                                <figcaption class="carousel__caption">
-                                    <strong>Enola Holmes 2</strong>: investigation, intelligence, and a heroine.
+                                <figcaption class="figure__caption">
+                                    <strong>Enola Holmes 2</strong><br>
+                                    Investigation, intelligence, and a heroine.
                                 </figcaption>
                             </figure>
-                        </li>
-
-                        <li class="carousel__slide">
+                        </div>
+                        <div class="carousel__slide">
                             <figure class="carousel__figure figure">
-                                <img src="/assets/img/slider/radioactive.avif" alt="Poster for the film Radioactive"
+                                <img src="../../assets/img/films/radioactive.avif" alt="Poster for the film Radioactive"
                                     width="480" height="720" loading="lazy" decoding="async" />
-                                <figcaption class="carousel__caption">
-                                    <strong>Radioactive</strong>: Marie Curie and the weight of recognition.
+                                <figcaption class="figure__caption">
+                                    <strong>Radioactive</strong><br>
+                                    Marie Curie and the weight of recognition.
                                 </figcaption>
                             </figure>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                    <button class="carousel__prev" aria-label="Previous film">&larr;</button>
+                    <button class="carousel__next" aria-label="Next film">&rarr;</button>
+                    <div class="carousel__indicators">
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                        <span class="indicator" data-slide="3"></span>
+                    </div>
                 </div>
             </section>
 

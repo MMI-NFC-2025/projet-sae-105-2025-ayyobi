@@ -105,7 +105,7 @@
             </header>
 
             <figure class="article__figure figure">
-                <img src="/assets/img/articles/contact-still.avif"
+                <img src="../../assets/img/articles/film-contact.avif"
                     alt="Image inspirée du film Contact (1997) : une femme au premier plan, des antennes radio en arrière-plan"
                     width="981" height="750" loading="lazy" decoding="async" />
                 <figcaption class="figure__caption">
@@ -149,7 +149,7 @@
                 <figure class="article__figure figure figure--video">
                     <video class="figure__video" controls preload="metadata" width="360"
                         aria-label="Bande-annonce de Contact (1997)">
-                        <source src="/assets/video/contact-trailer.mp4" type="video/mp4" />
+                        <source src="../../assets/video/contact-film.mp4" type="video/mp4" />
                         Votre navigateur ne supporte pas la lecture de vidéos HTML5.
                     </video>
                     <figcaption class="figure__caption">
@@ -158,77 +158,61 @@
                 </figure>
             </section>
 
-            <!-- SLIDER (films & séries) -->
+            <!-- CAROUSEL (films & séries) -->
             <section class="article__section" aria-labelledby="slider-title">
                 <h2 class="article__subtitle" id="slider-title">Films et séries sur l’effet Matilda</h2>
 
-                <!--
-            Structure slider (compatible avec un JS type carousel.js)
-            - data-carousel pour cibler facilement
-            - boutons avec aria-controls
-            - liste horizontale
-          -->
-                <div class="carousel" data-carousel aria-roledescription="carousel">
-                    <div class="carousel__header">
-                        <p class="carousel__hint" id="carousel-hint">
-                            Faites défiler pour découvrir d’autres œuvres.
-                        </p>
-
-                        <div class="carousel__controls" aria-label="Contrôles du carrousel">
-                            <button class="carousel__btn carousel__btn--prev" type="button"
-                                aria-label="Aller à l’élément précédent" aria-controls="carousel-track">
-                                ←
-                            </button>
-
-                            <button class="carousel__btn carousel__btn--next" type="button"
-                                aria-label="Aller à l’élément suivant" aria-controls="carousel-track">
-                                →
-                            </button>
+                <div class="carousel" id="films-carousel">
+                    <div class="carousel__container">
+                        <div class="carousel__slide">
+                            <figure class="carousel__figure figure">
+                                <img src="../../assets/img/films/hidden-figures.avif" alt="Affiche du film Hidden Figures"
+                                    width="480" height="720" loading="lazy" decoding="async" />
+                                <figcaption class="figure__caption">
+                                    <strong>Hidden Figures</strong><br>
+                                    Des mathématiciennes essentielles à la conquête spatiale.
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel__slide">
+                            <figure class="carousel__figure figure">
+                                <img src="../../assets/img/films/contact-film.avif" alt="Affiche du film Contact"
+                                    width="480" height="720" loading="lazy" decoding="async" />
+                                <figcaption class="figure__caption">
+                                    <strong>Contact</strong><br>
+                                    Une scientifique au cœur du récit.
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel__slide">
+                            <figure class="carousel__figure figure">
+                                <img src="../../assets/img/films/enola.avif" alt="Affiche d’Enola Holmes 2"
+                                    width="480" height="720" loading="lazy" decoding="async" />
+                                <figcaption class="figure__caption">
+                                    <strong>Enola Holmes 2</strong><br>
+                                    Enquête, intelligence et héroïne.
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel__slide">
+                            <figure class="carousel__figure figure">
+                                <img src="../../assets/img/films/radioactive.avif" alt="Affiche du film Radioactive"
+                                    width="480" height="720" loading="lazy" decoding="async" />
+                                <figcaption class="figure__caption">
+                                    <strong>Radioactive</strong><br>
+                                    Marie Curie et le poids de la reconnaissance.
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
-
-                    <ul class="carousel__track" id="carousel-track" aria-describedby="carousel-hint">
-                        <li class="carousel__slide">
-                            <figure class="carousel__figure figure">
-                                <img src="/assets/img/slider/hidden-figures.avif" alt="Affiche du film Hidden Figures"
-                                    width="480" height="720" loading="lazy" decoding="async" />
-                                <figcaption class="carousel__caption">
-                                    <strong>Hidden Figures</strong> : des mathématiciennes essentielles à la conquête
-                                    spatiale.
-                                </figcaption>
-                            </figure>
-                        </li>
-
-                        <li class="carousel__slide">
-                            <figure class="carousel__figure figure">
-                                <img src="/assets/img/slider/contact-poster.avif" alt="Affiche du film Contact"
-                                    width="480" height="720" loading="lazy" decoding="async" />
-                                <figcaption class="carousel__caption">
-                                    <strong>Contact</strong> : une scientifique au cœur du récit.
-                                </figcaption>
-                            </figure>
-                        </li>
-
-                        <li class="carousel__slide">
-                            <figure class="carousel__figure figure">
-                                <img src="/assets/img/slider/enola-holmes-2.avif" alt="Affiche d’Enola Holmes 2"
-                                    width="480" height="720" loading="lazy" decoding="async" />
-                                <figcaption class="carousel__caption">
-                                    <strong>Enola Holmes 2</strong> : enquête, intelligence et héroïne.
-                                </figcaption>
-                            </figure>
-                        </li>
-
-                        <li class="carousel__slide">
-                            <figure class="carousel__figure figure">
-                                <img src="/assets/img/slider/radioactive.avif" alt="Affiche du film Radioactive"
-                                    width="480" height="720" loading="lazy" decoding="async" />
-                                <figcaption class="carousel__caption">
-                                    <strong>Radioactive</strong> : Marie Curie et le poids de la reconnaissance.
-                                </figcaption>
-                            </figure>
-                        </li>
-                    </ul>
+                    <button class="carousel__prev" aria-label="Film précédent">&larr;</button>
+                    <button class="carousel__next" aria-label="Film suivant">&rarr;</button>
+                    <div class="carousel__indicators">
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                        <span class="indicator" data-slide="3"></span>
+                    </div>
                 </div>
             </section>
 
