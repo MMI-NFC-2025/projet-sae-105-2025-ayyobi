@@ -1,1 +1,137 @@
-/* form styles */
+/* =========================================================
+   CONTACT — Formulaire seul
+   Variables utilisées : UNIQUEMENT celles fournies
+========================================================= */
+
+.contact {
+    background-color: var(--color-black-spatial);
+    color: var(--color-off-white);
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+/* ---------- Titre ---------- */
+.section__header {
+    margin-bottom: 2.5rem;
+}
+
+.section__title {
+    margin: 0;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-title);
+    line-height: 1.2;
+    color: var(--color-off-white);
+}
+
+/* ---------- Formulaire ---------- */
+.form {
+    display: grid;
+    gap: 1.75rem;
+}
+
+/* bloc champ */
+.form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* labels (accessibles mais discrets) */
+.form__label {
+    font-family: var(--font-body);
+    font-size: var(--font-size-small);
+    color: var(--color-off-white);
+}
+
+/* inputs & textarea */
+.form__input,
+.form__textarea {
+    width: 100%;
+    background-color: var(--color-beige-pale-vintage);
+    color: var(--color-gray-anthracite);
+    border: 0.125rem solid transparent;
+    border-radius: 0.5rem;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+
+    padding: 1.25rem 1.25rem;
+    line-height: 1.4;
+
+    transition: border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+/* textarea grande comme la maquette */
+.form__textarea {
+    min-height: 16rem;
+    resize: vertical;
+}
+
+/* placeholder */
+.form__input::placeholder,
+.form__textarea::placeholder {
+    color: var(--color-gray-anthracite-66);
+    font-weight: var(--font-weight-bold);
+}
+
+/* focus */
+.form__input:focus-visible,
+.form__textarea:focus-visible {
+    outline: none;
+    border-color: var(--color-gold-yellow);
+    box-shadow: 0 0 0 0.25rem rgba(217, 181, 111, 0.35);
+}
+
+/* hover léger */
+.form__input:hover,
+.form__textarea:hover {
+    background-color: var(--color-off-white);
+}
+
+/* ---------- Bouton ---------- */
+.form__submit {
+    margin-top: 2rem;
+    width: 100%;
+
+    background-color: var(--color-gold-yellow);
+    color: var(--color-gray-anthracite);
+
+    border: none;
+    border-radius: 0.5rem;
+
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-uppercase);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    padding: 1.25rem;
+    cursor: pointer;
+
+    transition: transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
+}
+
+/* hover bouton */
+.form__submit:hover {
+    filter: brightness(0.95);
+    transform: translateY(-0.125rem);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.35);
+}
+
+/* active */
+.form__submit:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* focus bouton */
+.form__submit:focus-visible {
+    outline: 0.1875rem solid var(--color-gold-yellow);
+    outline-offset: 0.25rem;
+}
