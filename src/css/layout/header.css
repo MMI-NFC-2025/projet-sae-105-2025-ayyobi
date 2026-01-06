@@ -1,9 +1,3 @@
-/* header styles */
-/* =========================================================
-   HEADER — Layout
-   - basé sur la maquette (logo à gauche, EN/FR + burger à droite)
-   - sans menu plein écran (ça c'est menu.css)
-========================================================= */
 
 .header {
     display: flex;
@@ -11,6 +5,7 @@
     justify-content: space-between;
     gap: var(--space-4);
     padding-block: var(--space-5);
+    padding:1rem 1.5rem;
 }
 
 /* Logo */

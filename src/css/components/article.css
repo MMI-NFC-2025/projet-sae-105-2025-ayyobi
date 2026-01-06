@@ -1,1 +1,225 @@
 /* article styles (blockquote, figure...) */
+/* =========================================================
+   ARTICLE PAGE — "Ses découvertes et réalisations"
+   (SANS header / footer / menu)
+========================================================= */
+
+.article {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+    margin: 1rem 1.5rem;
+}
+
+/* ====== Header (titre page) ====== */
+.article__header {
+    margin-bottom: 2.25rem;
+}
+
+.article__kicker {
+    margin: 0 0 1rem;
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-small);
+    line-height: 1.5;
+    color: rgba(247, 245, 240, 0.75);
+}
+
+.article__backlink {
+    color: rgba(247, 245, 240, 0.75);
+    text-decoration: none;
+}
+
+.article__backlink:hover {
+    color: var(--color-off-white);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 0.12em;
+}
+
+.article__title {
+    margin: 0;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-regular);
+    font-size: 1.75rem;
+    /* proche maquette */
+    line-height: 1.15;
+    color: var(--color-off-white);
+}
+
+/* ====== Sections ====== */
+.article__section {
+    margin-top: 2.25rem;
+}
+
+.article__section:first-of-type {
+    margin-top: 0;
+}
+
+/* Sous-titres (H2) */
+.article__subtitle {
+    margin: 0 0 0.75rem;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-regular);
+    font-size: 1.25rem;
+    /* proche maquette */
+    line-height: 1.25;
+    color: var(--color-off-white);
+}
+
+/* Paragraphes */
+.article__text {
+    margin: 0 0 0.875rem;
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-body);
+    line-height: 1.7;
+    color: rgba(247, 245, 240, 0.82);
+}
+
+.article__text:last-child {
+    margin-bottom: 0;
+}
+
+/* Liens dans le texte */
+.article__text a {
+    color: var(--color-gold-yellow);
+    text-decoration: none;
+}
+
+.article__text a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 0.12em;
+}
+
+/* Strong / Em */
+.article__text strong {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-off-white);
+}
+
+.article__text em {
+    font-style: italic;
+}
+
+/* ====== Figures (images) ====== */
+.article__figure {
+    margin: 1.25rem 0 0;
+}
+
+.figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0;
+    /* maquette: angles quasi droits */
+    border: 0.0625rem solid rgba(247, 245, 240, 0.12);
+}
+
+/* Légende */
+.figure__caption {
+    margin-top: 0.625rem;
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-small);
+    line-height: 1.5;
+    color: rgba(247, 245, 240, 0.72);
+}
+
+.figure__link {
+    display: inline-block;
+    margin-left: 0.25rem;
+    color: var(--color-gold-yellow);
+    text-decoration: none;
+}
+
+.figure__link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 0.12em;
+}
+
+/* ====== Citation (bloc doré comme sur maquette) ====== */
+.quote {
+    margin: 1.75rem 0 0;
+    padding-top: 1.25rem;
+    border-top: 0.0625rem solid rgba(247, 245, 240, 0.18);
+}
+
+.quote__text {
+    margin: 0;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-bold);
+    font-size: 1rem;
+    line-height: 1.4;
+    font-style: italic;
+    color: var(--color-gold-yellow);
+}
+
+.quote__cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-small);
+    line-height: 1.4;
+    color: rgba(247, 245, 240, 0.65);
+}
+
+/* ====== Aside "Pour aller plus loin" ====== */
+.article__aside {
+    margin-top: 2.75rem;
+    padding-top: 1.5rem;
+    border-top: 0.0625rem solid rgba(247, 245, 240, 0.18);
+}
+
+.article__list {
+    margin: 0.75rem 0 0;
+    padding-left: 1.1rem;
+}
+
+.article__list li {
+    margin: 0 0 0.5rem;
+}
+
+.article__link {
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-body);
+    line-height: 1.6;
+    color: rgba(247, 245, 240, 0.82);
+    text-decoration: none;
+}
+
+.article__link:hover {
+    color: var(--color-off-white);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 0.12em;
+}
+
+/* ====== Focus visibles ====== */
+.article__backlink:focus-visible,
+.article__text a:focus-visible,
+.figure__link:focus-visible,
+.article__link:focus-visible {
+    outline: 0.1875rem solid var(--color-gold-yellow);
+    outline-offset: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+/* ====== Petit ajustement > mobile large ====== */
+@media (min-width: 26rem) {
+    .article {
+        padding-top: 3.25rem;
+        padding-bottom: 3.25rem;
+    }
+
+    .article__title {
+        font-size: 2rem;
+    }
+
+    .article__subtitle {
+        font-size: 1.35rem;
+    }
+}
