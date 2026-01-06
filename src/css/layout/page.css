@@ -1,1 +1,117 @@
 /* page layout */
+/* =========================================================
+   SECTIONS  page accueil— Titres / texte
+========================================================= */
+
+.section {
+    padding: 2.25rem 0 0;
+}
+
+.section__header {
+    margin-bottom: 1.5rem;
+}
+
+.section__title {
+    margin: 0 0 1rem;
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    color: var(--color-off-white);
+}
+
+.section__intro {
+    margin: 0;
+    font-size: 0.875rem;
+    color: rgba(247, 245, 240, 0.78);
+    max-width: 48ch;
+}
+
+.section__content p {
+    margin: 0 0 1rem;
+    font-size: 0.75rem;
+    color: rgba(247, 245, 240, 0.78);
+}
+
+.section__content a {
+    color: var(--color-off-white);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.section__content a:hover {
+    color: var(--color-gold-yellow);
+}
+
+/* =========================================================
+   FIGURE (portrait + légende)
+========================================================= */
+
+.figure {
+    margin: 0 0 1.5rem;
+}
+
+.figure--bio img {
+    width: 100%;
+    border-radius: 0.25rem;
+    display: block;
+}
+
+.figure__caption {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: rgba(247, 245, 240, 0.7);
+}
+
+/* =========================================================
+   CITATION
+========================================================= */
+
+.quote {
+    margin: 1.25rem 0;
+    padding-left: 1rem;
+    border-left: 0.125rem solid rgba(217, 181, 111, 0.55);
+}
+
+.quote__text {
+    margin: 0 0 0.5rem;
+    font-style: italic;
+    font-size: 0.75rem;
+    color: rgba(247, 245, 240, 0.85);
+}
+
+.quote__cite {
+    font-style: normal;
+    font-size: 0.75rem;
+    color: rgba(247, 245, 240, 0.65);
+}
+
+/* =========================================================
+   LIEN "PLUS D'INFO…"
+========================================================= */
+
+.morelink {
+    display: inline-flex;
+    align-items: center;
+
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--color-gold-yellow);
+    text-decoration: none;
+}
+
+.morelink:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.12em;
+    text-underline-offset: 0.2em;
+}
+
+.morelink:focus-visible {
+    outline: 0.1875rem solid var(--color-gold-yellow);
+    outline-offset: 0.25rem;
+    border-radius: 0.5rem;
+}

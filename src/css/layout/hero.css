@@ -1,0 +1,78 @@
+/* =========================================================
+   HERO — Accueil
+========================================================= */
+
+.hero {
+    background: var(--color-gray-anthracite);
+}
+
+/* image pleine largeur */
+.hero__header {
+    position: relative;
+    padding: 0;
+}
+
+.hero__img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero__img img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* overlay titre */
+.hero__title {
+    position: absolute;
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 1.25rem;
+
+    margin: 0;
+    padding: 1.25rem;
+
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1.1;
+
+    color: var(--color-off-white);
+    background: rgba(31, 30, 32, 0.66);
+    /* #1F1E20 à 66% */
+    border-radius: 0.5rem;
+}
+
+.hero__person {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero__person:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+/* chapo */
+.hero__chapo {
+    padding: 1.5rem 0 0;
+}
+
+.chapo__text {
+    margin: 0;
+    font-size: 0.75rem;
+    color: rgba(247, 245, 240, 0.8);
+}
+
+.chapo__text a {
+    color: var(--color-off-white);
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.2em;
+}
+
+.chapo__text a:hover {
+    color: var(--color-gold-yellow);
+}
+

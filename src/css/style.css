@@ -13,6 +13,7 @@
 @import "layout/nav.css";
 @import "layout/footer.css";
 @import "layout/page.css";
+@import "layout/hero.css";
 
 /* Components */
 @import "components/card.css";
