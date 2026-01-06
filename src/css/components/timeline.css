@@ -1,1 +1,112 @@
-/* timeline styles */
+/* =========================================================
+   ARTICLE — Les Matilda (grille alternée comme la maquette)
+========================================================= */
+
+.matilda-list {
+    list-style: none;
+    margin: 1.5rem 0 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Carte = 2 blocs collés : label beige + image */
+.matilda-card {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+
+    /* hauteur proche de la maquette */
+    min-height: 6.75rem;
+}
+
+/* Par défaut (impair) : LABEL à gauche, IMAGE à droite */
+.matilda-card img {
+    order: 2;
+}
+
+.matilda-card__label {
+    order: 1;
+}
+
+/* Alternance (pair) : IMAGE à gauche, LABEL à droite */
+.matilda-card:nth-child(even) img {
+    order: 1;
+}
+
+.matilda-card:nth-child(even) .matilda-card__label {
+    order: 2;
+}
+
+/* Bloc image */
+.matilda-card img {
+    width: 58%;
+    height: auto;
+    /* la hauteur vient du parent */
+    object-fit: cover;
+    display: block;
+}
+
+/* Bloc label */
+.matilda-card__label {
+    width: 42%;
+    margin: 0;
+    background: var(--color-sand-soft);
+    color: var(--color-gray-anthracite);
+    display: flex;
+    align-items: center;
+    padding: 0.9rem 0.9rem;
+}
+
+/* Le lien doit occuper tout le bloc, comme une “carte cliquable” */
+.matilda-card__link {
+    display: block;
+    width: 100%;
+
+    text-decoration: none;
+    color: inherit;
+
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-regular);
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+/* Petite emphasis comme sur la maquette */
+.matilda-card__link strong {
+    font-weight: var(--font-weight-bold);
+}
+
+/* Arrondis EXACTS (bloc collés) */
+.matilda-card__label {
+    border-radius: 1.25rem 0 0 1.25rem;
+}
+
+.matilda-card img {
+    border-radius: 0 1.25rem 1.25rem 0;
+}
+
+/* Inversion des arrondis pour les pairs */
+.matilda-card:nth-child(even) .matilda-card__label {
+    border-radius: 0 1.25rem 1.25rem 0;
+}
+
+.matilda-card:nth-child(even) img {
+    border-radius: 1.25rem 0 0 1.25rem;
+}
+
+/* Accessibilité focus */
+.matilda-card__link:focus-visible {
+    outline: 0.1875rem solid var(--color-gold-yellow);
+    outline-offset: 0.25rem;
+    border-radius: 0.75rem;
+}
+
+/* Hover discret (optionnel mais proche de l’esprit) */
+.matilda-card__link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.12em;
+    text-underline-offset: 0.2em;
+}

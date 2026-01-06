@@ -4,9 +4,7 @@
 
 /* Base (tokens, typography, global, accessibility) */
 @import "base/variables.css";
-@import "base/typography.css";
 @import "base/global.css";
-@import "base/accessibility.css";
 
 /* Layout */
 @import "layout/header.css";
@@ -18,7 +16,6 @@
 /* Components */
 @import "components/card.css";
 @import "components/article.css";
-@import "components/callout.css";
 @import "components/timeline.css";
 @import "components/glossary.css";
 @import "components/gallery.css";
