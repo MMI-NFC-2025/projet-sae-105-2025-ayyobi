@@ -47,25 +47,27 @@
                 <ul class="menu__list u-list-unstyled">
                     <li class="menu__item"><a class="menu__link" href="/en/">Home</a></li>
 
-                    <li class="menu__item">
-                        <a class="menu__link" href="/en/articles/lepaute.html">Articles</a>
-                        <ul class="menu__sublist u-list-unstyled" aria-label="Articles submenu">
+                    <li class="menu__item menu__item--has-sub">
+                        <button class="menu__toggle" type="button" aria-expanded="false" aria-controls="submenu-articles">
+                            Articles
+                            <span class="menu__chevron" aria-hidden="true">▾</span>
+                        </button>
+
+                        <ul class="menu__sublist u-list-unstyled" id="submenu-articles" aria-label="Articles submenu" hidden>
                             <li class="menu__subitem">
                                 <a class="menu__sublink" href="/en/articles/lepaute.html">Nicole-Reine Lepaute</a>
                             </li>
                             <li class="menu__subitem">
-                                <a class="menu__sublink" href="/en/articles/literature.html">Women in science</a>
+                                <a class="menu__sublink" href="/en/articles/literature.html">Women in Science</a>
                             </li>
                             <li class="menu__subitem">
-                                <a class="menu__sublink" href="/en/articles/popular-science.html">Science
-                                    communication</a>
+                                <a class="menu__sublink" href="/en/articles/science-communication.html">Science Communication</a>
                             </li>
                             <li class="menu__subitem">
-                                <a class="menu__sublink" href="/en/articles/film-contact.html">Contact (1997)</a>
+                                <a class="menu__sublink" href="/en/articles/contact-film.html">Contact (1997)</a>
                             </li>
                             <li class="menu__subitem">
-                                <a class="menu__sublink" href="/en/articles/library-object.html">Book: 17 women Nobel
-                                    Prize winners</a>
+                                <a class="menu__sublink" href="/en/articles/book-nobel-women.html">Book: 17 Women Nobel Prize Winners in Science</a>
                             </li>
                         </ul>
                     </li>

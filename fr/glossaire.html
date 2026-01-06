@@ -45,9 +45,13 @@
                 <ul class="menu__list u-list-unstyled">
                     <li class="menu__item"><a class="menu__link" href="/fr/">Accueil</a></li>
 
-                    <li class="menu__item">
-                        <a class="menu__link" href="/fr/articles/lepaute.html">Articles</a>
-                        <ul class="menu__sublist u-list-unstyled" aria-label="Sous-menu Articles">
+                    <li class="menu__item menu__item--has-sub">
+                        <button class="menu__toggle" type="button" aria-expanded="false" aria-controls="submenu-articles">
+                            Articles
+                            <span class="menu__chevron" aria-hidden="true">▾</span>
+                        </button>
+
+                        <ul class="menu__sublist u-list-unstyled" id="submenu-articles" aria-label="Sous-menu Articles" hidden>
                             <li class="menu__subitem">
                                 <a class="menu__sublink" href="/fr/articles/lepaute.html">Nicole-Reine Lepaute</a>
                             </li>
@@ -55,15 +59,13 @@
                                 <a class="menu__sublink" href="/fr/articles/litterature.html">Femmes de science</a>
                             </li>
                             <li class="menu__subitem">
-                                <a class="menu__sublink" href="/fr/articles/vulgarisation.html">Vulgarisation
-                                    scientifique</a>
+                                <a class="menu__sublink" href="/fr/articles/vulgarisation.html">Vulgarisation scientifique</a>
                             </li>
                             <li class="menu__subitem">
                                 <a class="menu__sublink" href="/fr/articles/contact-film.html">Film Contact (1997)</a>
                             </li>
                             <li class="menu__subitem">
-                                <a class="menu__sublink" href="/fr/articles/objet-bu.html">Livre : 17 femmes prix
-                                    Nobel</a>
+                                <a class="menu__sublink" href="/fr/articles/objet-bu.html">Livre : 17 femmes prix Nobel de sciences</a>
                             </li>
                         </ul>
                     </li>
