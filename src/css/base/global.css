@@ -17,8 +17,8 @@ body {
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-regular);
     line-height: 1.6;
-    color: var(--color-gray-anthracite);
-    background-color: var(--color-beige-pale-vintage);
+    color: var(--color-beige-pale-vintage);
+    background-color: var(--color-gray-anthracite);
 }
 
 /* =========================
