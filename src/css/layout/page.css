@@ -115,3 +115,90 @@
     outline-offset: 0.25rem;
     border-radius: 0.5rem;
 }
+
+/* =========================================================
+   AUTRES PROJETS — Page (sans header/footer)
+   HTML cible :
+   <section class="section container">
+     .section__header > .section__title (h1)
+     ul.projects-list > li > a
+========================================================= */
+
+/* Section globale */
+.section {
+    padding: 2.75rem 0 3.5rem;
+}
+
+/* Titre (comme l’image : très grand, Georgia, blanc cassé) */
+.section__header {
+    margin: 0 0 2.25rem;
+}
+
+.section__title {
+    margin: 0;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-regular);
+    font-size: 2.25rem;
+    line-height: 1.15;
+    color: var(--color-off-white);
+    letter-spacing: 0.01em;
+}
+
+.section__title strong {
+    font-weight: var(--font-weight-regular);
+    /* sur la maquette, pas “gras agressif” */
+}
+
+/* =========================================================
+   Liste projets
+========================================================= */
+
+.projects-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Chaque ligne */
+.projects-list__item {
+    margin: 0;
+    padding: 0;
+}
+
+/* Lien + séparateur doré */
+.projects-list__link {
+    display: block;
+    padding: 1.125rem 0;
+    /* espace vertical entre les noms */
+    border-bottom: 0.0625rem solid color-mix(in srgb, var(--color-gold-yellow) 60%, transparent);
+
+    font-family: var(--font-body);
+    font-weight: var(--font-weight-regular);
+    font-size: 1rem;
+    line-height: 1.4;
+
+    color: color-mix(in srgb, var(--color-off-white) 78%, transparent);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+
+    transition: color 220ms ease, border-color 220ms ease, transform 220ms ease;
+}
+
+/* Dernière ligne (comme l’image : il y a aussi un trait) */
+.projects-list__item:last-child .projects-list__link {
+    border-bottom: 0.0625rem solid color-mix(in srgb, var(--color-gold-yellow) 60%, transparent);
+}
+
+/* Hover */
+.projects-list__link:hover {
+    color: var(--color-off-white);
+    border-color: var(--color-gold-yellow);
+    transform: translateX(0.1rem);
+}
+
+/* Focus accessible */
+.projects-list__link:focus-visible {
+    outline: 0.1875rem solid var(--color-gold-yellow);
+    outline-offset: 0.25rem;
+    border-radius: 0.5rem;
+}
