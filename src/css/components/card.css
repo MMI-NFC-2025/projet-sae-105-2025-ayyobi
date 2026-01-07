@@ -1,55 +1,28 @@
 /* =========================================================
-   HOME — Cards (Accueil) — EXACT maquette
-========================================================= */
-
-/* Header section (titre + intro) */
-.section{
-    margin:3rem 1.5rem;
-}
-
-
-.section__title {
-    margin: 0 0 0.75rem;
-    font-family: var(--font-title);
-    font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-h2);
-    color: var(--color-off-white);
-}
-
-.section__intro {
-    margin: 0;
-    font-family: var(--font-body);
-    font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-small);
-    line-height: 1.6;
-    color: color-mix(in srgb, var(--color-off-white) 78%, transparent);
-    max-width: 48ch;
-}
-
-/* =========================================================
-   Cards list — style "liste" comme sur l'image
+   HOME — Cards list (FIX maquette)
 ========================================================= */
 
 .section__card.card {
     display: grid;
-    grid-template-columns: 4.5rem 1fr;
-    /* image à gauche */
+    grid-template-columns: 5.25rem 1fr;
+    grid-template-rows: auto auto;
+    /* 2 lignes: titre + caption */
     column-gap: 1rem;
-    align-items: end;
 
-    padding: 1.25rem 0;
-    /* pas de padding horizontal */
+    padding: 1.5rem 0;
     border-bottom: 0.0625rem solid color-mix(in srgb, var(--color-off-white) 18%, transparent);
-    /* ligne discrète */
 }
 
-/* Image carrée à gauche */
+/* L’image doit prendre la hauteur des 2 lignes (titre + texte) */
 .card__img {
-    width: 4.5rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+
+    width: 5.25rem;
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: 0;
-    /* dans la maquette c'est quasi carré */
+    align-self: start;
 }
 
 .card__img img {
@@ -59,13 +32,16 @@
     object-fit: cover;
 }
 
-/* Titre */
+/* Titre en haut à droite */
 .card__title {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
     margin: 0;
     font-family: var(--font-title);
     font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-body);
-    line-height: 1.15;
+    font-size: 1.0625rem;
+    line-height: 1.2;
     color: var(--color-off-white);
 }
 
@@ -74,36 +50,39 @@
     text-decoration: none;
 }
 
-/* Texte + lien */
+/* Caption DIRECTEMENT sous le titre (pas après l’image) */
 .card__caption {
     grid-column: 2 / 3;
-    /* sous le titre */
+    grid-row: 2 / 3;
+
     margin: 0;
+    align-self: start;
 }
 
 .card__excerpt {
-    margin: 0.4rem 0 0.6rem;
+    margin: 0.5rem 0 0.75rem;
+    max-width: 42ch;
+
     font-family: var(--font-body);
     font-weight: var(--font-weight-regular);
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     line-height: 1.45;
     color: color-mix(in srgb, var(--color-off-white) 75%, transparent);
-    max-width: 42ch;
 }
 
-/* Plus d'info… */
 .card__link.morelink {
     display: inline-block;
+
     font-family: var(--font-title);
     font-weight: var(--font-weight-bold);
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
     color: var(--color-gold-yellow);
     text-decoration: none;
 }
 
-/* Hover très discret (maquette = presque rien) */
 .card__title-link:hover,
 .card__link.morelink:hover {
     text-decoration: underline;
@@ -111,7 +90,6 @@
     text-underline-offset: 0.2em;
 }
 
-/* Focus accessibles */
 .card__title-link:focus-visible,
 .card__link.morelink:focus-visible {
     outline: 0.1875rem solid var(--color-gold-yellow);
