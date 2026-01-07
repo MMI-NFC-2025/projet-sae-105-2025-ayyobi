@@ -22,7 +22,7 @@
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-small);
     line-height: 1.6;
-    color: rgba(247, 245, 240, 0.78);
+    color: color-mix(in srgb, var(--color-off-white) 78%, transparent);
     max-width: 48ch;
 }
 
@@ -39,7 +39,7 @@
 
     padding: 1.25rem 0;
     /* pas de padding horizontal */
-    border-bottom: 0.0625rem solid rgba(247, 245, 240, 0.18);
+    border-bottom: 0.0625rem solid color-mix(in srgb, var(--color-off-white) 18%, transparent);
     /* ligne discrète */
 }
 
@@ -87,7 +87,7 @@
     font-weight: var(--font-weight-regular);
     font-size: 0.75rem;
     line-height: 1.45;
-    color: rgba(247, 245, 240, 0.75);
+    color: color-mix(in srgb, var(--color-off-white) 75%, transparent);
     max-width: 42ch;
 }
 

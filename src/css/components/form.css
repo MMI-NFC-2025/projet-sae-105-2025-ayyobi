@@ -83,7 +83,7 @@
 .form__textarea:focus-visible {
     outline: none;
     border-color: var(--color-gold-yellow);
-    box-shadow: 0 0 0 0.25rem rgba(217, 181, 111, 0.35);
+    box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--color-gold-yellow) 35%, transparent);
 }
 
 /* hover léger */

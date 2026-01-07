@@ -39,7 +39,7 @@
     line-height: 1.1;
 
     color: var(--color-off-white);
-    background: rgba(31, 30, 32, 0.66);
+    background: var(--color-gray-anthracite-66);
     /* #1F1E20 à 66% */
     border-radius: 0.5rem;
 }
@@ -63,7 +63,7 @@
 .chapo__text {
     margin: 0;
     font-size: 0.75rem;
-    color: rgba(247, 245, 240, 0.8);
+    color: color-mix(in srgb, var(--color-off-white) 80%, transparent);
 }
 
 .chapo__text a {

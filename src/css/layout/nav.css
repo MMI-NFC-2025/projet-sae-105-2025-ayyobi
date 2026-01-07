@@ -188,7 +188,7 @@
     font-weight: var(--font-weight-regular);
     font-size: clamp(1.8rem, 5.5vw, 2.3rem);
     line-height: 1.15;
-    color: rgba(31, 30, 32, 0.92);
+    color: color-mix(in srgb, var(--color-gray-anthracite) 92%, transparent);
     padding: 0.35rem 0;
 }
 

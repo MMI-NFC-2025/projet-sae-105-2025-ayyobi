@@ -21,11 +21,11 @@
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-small);
     line-height: 1.5;
-    color: rgba(247, 245, 240, 0.75);
+    color: color-mix(in srgb, var(--color-off-white) 75%, transparent);
 }
 
 .article__backlink {
-    color: rgba(247, 245, 240, 0.75);
+    color: color-mix(in srgb, var(--color-off-white) 75%, transparent);
     text-decoration: none;
 }
 
@@ -73,7 +73,7 @@
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-body);
     line-height: 1.7;
-    color: rgba(247, 245, 240, 0.82);
+    color: color-mix(in srgb, var(--color-off-white) 82%, transparent);
 }
 
 .article__text:last-child {
@@ -113,7 +113,7 @@
     display: block;
     border-radius: 0;
     /* maquette: angles quasi droits */
-    border: 0.0625rem solid rgba(247, 245, 240, 0.12);
+    border: 0.0625rem solid color-mix(in srgb, var(--color-off-white) 12%, transparent);
 }
 
 /* Légende */
@@ -123,7 +123,7 @@
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-small);
     line-height: 1.5;
-    color: rgba(247, 245, 240, 0.72);
+    color: color-mix(in srgb, var(--color-off-white) 72%, transparent);
 }
 
 .figure__link {
@@ -143,7 +143,7 @@
 .quote {
     margin: 1.75rem 0 0;
     padding-top: 1.25rem;
-    border-top: 0.0625rem solid rgba(247, 245, 240, 0.18);
+    border-top: 0.0625rem solid color-mix(in srgb, var(--color-off-white) 18%, transparent);
 }
 
 .quote__text {
@@ -163,14 +163,14 @@
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-small);
     line-height: 1.4;
-    color: rgba(247, 245, 240, 0.65);
+    color: color-mix(in srgb, var(--color-off-white) 65%, transparent);
 }
 
 /* ====== Aside "Pour aller plus loin" ====== */
 .article__aside {
     margin-top: 2.75rem;
     padding-top: 1.5rem;
-    border-top: 0.0625rem solid rgba(247, 245, 240, 0.18);
+    border-top: 0.0625rem solid color-mix(in srgb, var(--color-off-white) 18%, transparent);
 }
 
 .article__list {
@@ -187,7 +187,7 @@
     font-weight: var(--font-weight-regular);
     font-size: var(--font-size-body);
     line-height: 1.6;
-    color: rgba(247, 245, 240, 0.82);
+    color: color-mix(in srgb, var(--color-off-white) 82%, transparent);
     text-decoration: none;
 }
 
@@ -292,7 +292,7 @@
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 50%;
-    background: rgba(217, 181, 111, 0.3);
+    background: color-mix(in srgb, var(--color-gold-yellow) 30%, transparent);
     margin: 0 0.25rem;
     cursor: pointer;
     transition: background 0.3s ease;
